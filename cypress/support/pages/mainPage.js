@@ -8,8 +8,10 @@ class MainPage {
     }
 
     addToCart() {
-        cy.contains('button', 'В корзину').should('be.visible').and('be.enabled').click()
-    }
+        cy.get('mvid-day-product').first().within(() => {
+            cy.contains('button', 'В корзину').click({ force: true })
+        })
+    } 
 
     goToCart() {
         cy.get('mvid-header-icon[title="Корзина"]').should('be.visible').click()

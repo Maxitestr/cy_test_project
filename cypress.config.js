@@ -1,7 +1,6 @@
 const { defineConfig } = require("cypress")
 
 module.exports = defineConfig({
-  //allowCypressEnv: false,
 
   e2e: {
     baseUrl: 'https://www.mvideo.ru',
@@ -11,7 +10,7 @@ module.exports = defineConfig({
     ],
     viewportWidth: 1280,
     viewportHeight: 720,
-    failOnStatusCode: false,
+    failOnStatusCode: true,
     setupNodeEvents(on, config) {
       const allureWriter = require('@shelex/cypress-allure-plugin/writer')
       on('before:browser:launch', (browser, launchOptions) => {
@@ -25,7 +24,6 @@ module.exports = defineConfig({
       })
       allureWriter(on, config)
       return config
-      // implement node event listeners here
     },
   },
   env: {
