@@ -1,4 +1,4 @@
-class Сart {
+class Cart {
     //Геттеры
     getDetails() {
         //Возвращает блок деталей заказа
@@ -27,11 +27,11 @@ class Сart {
     }
 
     //Проверки
-    checkDetailesText(text) {
+    checkDetailsText(text) {
         cy.get('p').eq(0).should('be.visible').and('contain', text)
     }
 
-    checkDetailesPrice(price) {
+    checkDetailsPrice(price) {
         cy.get('p').eq(1).should('be.visible').then(($el) => {
             const actualPrice = $el.text().trim().replace(/\s+/g, ' ')
             expect(actualPrice).to.equal(price)
@@ -42,8 +42,8 @@ class Сart {
         this.getDetails().within(() => {
             // Проверяет текст, суммы товаров и итого 
             cy.contains(text).parent().within(() => {
-                this.checkDetailesText(text)
-                this.checkDetailesPrice(price)
+                this.checkDetailsText(text)
+                this.checkDetailsPrice(price)
             })
         })
     }
@@ -52,8 +52,8 @@ class Сart {
         //Проверяет размер скидки
         this.getDetails().within(() => {
             cy.contains('.cart-total__item-discount-button', text).within(() => {
-                this.checkDetailesText(text)
-                this.checkDetailesPrice(price)
+                this.checkDetailsText(text)
+                this.checkDetailsPrice(price)
             })
         })
     }
@@ -104,4 +104,4 @@ class Сart {
         cy.contains('button', 'Перейти к оформлению').should('be.visible').and('be.enabled')
     }
 }
-export default new Сart()
+export default new Cart()
