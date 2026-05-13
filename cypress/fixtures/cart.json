@@ -1,0 +1,132 @@
+{   "status": 200,
+    "success": true,
+    "messages": [],
+    "body": {
+        "guid": "2b78479e-44a3-41dd-af15-3369568596d1",
+        "priority": "MVIDEO",
+        "checkoutExist": false,
+        "regularItems": [
+            {
+                "isSelected": true,
+                "quantity": 1,
+                "materialNumber": "400369118",
+                "items": [
+                    "b3831488-ca4a-4854-a2f0-78b4a122e010"
+                ],
+                "name": "Блендер погружной Scarlett SC-HB42F82",
+                "image": "Pdb/400369118b.jpg",
+                "merchantId": "MVIDEO",
+                "type": "PRODUCT",
+                "availableQuantity": 10,
+                "isAvailableOnCredit": true,
+                "isFinalPrice": false,
+                "isOneLeft": false,
+                "isPrepayment": false,
+                "isOnlyRetail": false,
+                "price": {
+                    "basePrice": 1999,
+                    "salePrice": 1770,
+                    "midPrice": 1770,
+                    "itemPromoPrice": 1770
+                },
+                "link": "blender-pogruzhnoi-scarlett-sc-hb42f82-400369118",
+                "canAddItem": true,
+                "brandName": "Scarlett",
+                "categoryId": "486",
+                "categoryName": "Блендеры",
+                "materialSource": "shelf",
+                "isVendorCatalog": false,
+                "firstLevelCategoryId": "3",
+                "firstLevelCategoryName": "Мелкая кухонная техника",
+                "secondLevelCategoryId": "98",
+                "secondLevelCategoryName": "Миксеры и блендеры",
+                "accessoriesExist": true,
+                "servicesExist": true,
+                "topServices": [
+                    {
+                        "id": "5000552",
+                        "price": 584,
+                        "title": "Страховой полис Быстросервис ВСК 3 года. Отремонтируем технику за 72 часа или обменяем на новую.",
+                        "groupId": "0",
+                        "notCompatibleCustomerServices": [
+                            "5000550",
+                            "5000551",
+                            "5000553",
+                            "5000554",
+                            "5000555"
+                        ],
+                        "deliveryTypes": [
+                            "PICKUP",
+                            "COURIER"
+                        ]
+                    },
+                    {
+                        "id": "6026278",
+                        "price": 354,
+                        "title": "Защитим покупку на 1 год от мех.повреждений, залития водой, противоправных действий 3-х лиц, скачков напряжения и др. рисков (Альфа)",
+                        "groupId": "0",
+                        "notCompatibleCustomerServices": [],
+                        "deliveryTypes": [
+                            "PICKUP",
+                            "COURIER"
+                        ]
+                    },
+                    {
+                        "id": "6026281",
+                        "price": 442,
+                        "title": "Защитим покупку на 2 года от мех.повреждений, залития водой, противоправных действий 3-х лиц, скачков напряжения и др. рисков + продлим гарантию (Альфа)",
+                        "groupId": "0",
+                        "notCompatibleCustomerServices": [],
+                        "deliveryTypes": [
+                            "PICKUP",
+                            "COURIER"
+                        ]
+                    }
+                ],
+                "deliveryType": [
+                    "PICKUP",
+                    "COURIER"
+                ],
+                "position": 1,
+                "isDBS": false,
+                "isForeign": false,
+                "supplierCode": "K000062418",
+                "supplierName": "ООО ЭЙЧ ДИ ТРЕЙД"
+            }
+        ],
+        "unavailableItems": [],
+        "totalCount": 1,
+        "totalAmount": 1999,
+        "totalDiscountAmount": 229,
+        "discounts": [
+            {
+                "discountId": "5000328928",
+                "title": "Скидка по акции",
+                "amount": 229,
+                "validFrom": "2025-11-05",
+                "validTo": "9999-12-31"
+            }
+        ],
+        "unavailableItemsContent": "EMPTY",
+        "isAllItemsSelected": true,
+        "totalServicesCount": 0,
+        "totalServicesAmount": 0,
+        "shortContext": {
+            "materials": [
+                {
+                    "materialNumber": "400369118",
+                    "quantity": 1,
+                    "items": [
+                        "b3831488-ca4a-4854-a2f0-78b4a122e010"
+                    ],
+                    "name": "Блендер погружной Scarlett SC-HB42F82",
+                    "image": "Pdb/400369118b.jpg",
+                    "link": "blender-pogruzhnoi-scarlett-sc-hb42f82-400369118",
+                    "linkedServices": [],
+                    "linkedServicesQuantity": 0
+                }
+            ],
+            "itemsQuantity": 1
+        }
+    }
+}
