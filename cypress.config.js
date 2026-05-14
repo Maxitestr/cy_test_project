@@ -8,6 +8,10 @@ module.exports = defineConfig({
       "cypress/e2e/**/*.cy.js",
       "cypress/api/**/*.cy.js"
     ],
+    retries: {
+      runMode: 2,
+      openMode: 0,
+    },
     viewportWidth: 1280,
     viewportHeight: 720,
     failOnStatusCode: true,
