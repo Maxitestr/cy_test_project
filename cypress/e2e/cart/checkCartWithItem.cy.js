@@ -21,7 +21,7 @@ describe('Отображение корзины с товаром', () => {
         cart.checkCartItemQuantity(cartItem.title, cartItem.quantity)
 
         cy.allure().step('Проверяем детали заказа')
-        cart.checkDetailsProductPrice('1 товар', cartItem.fullPrice + ' ₽')
+        cart.checkDetailsProductPrice('1 товар', cartItem.fullPrice) //' ₽'
         cart.checkDetailsDiscount('Скидка', '−229 ₽')
         cart.checkDetailsProductPrice('Итого', cartItem.discountPrice)
         cart.checkGoToChekoutButton()
